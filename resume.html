@@ -2,29 +2,138 @@
 <html>
 	<head>
 		<title>Lab01 Resume</title>
+		<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet"> 
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    	<meta charset="utf-8">
+		<style>
+  		body {
+      		position: relative; 
+  		}
+  		#myresume {padding-top:100px;height:500px;color: #fff; text-align: center; background-color: #800000;} 
+  		#section1 {padding-top:50px;height:500px;color: #000; background-color: #fff;}
+  		#section2 {padding-top:50px;height:700px;color: #fff; background-color: #800000;}
+  		#section3 {padding-top:50px;height:500px;color: #000; background-color: #fff;}
+  		#section4 {padding-top:50px;height:500px;color: #fff; background-color: #800000;}
+  		#section5 {padding-top:50px;height:500px;color: #000; background-color: #fff;}
+		#section6 {padding-top:50px;height:500px;color: #fff; background-color: #800000;}
+		#footer {padding-top:10px;height:50px;color: #fff; text-align: center; background-color: #000;}  
+  		h1 {
+			font-family: 'Play', sans-serif;
+			font-size: 50px;
+  		}
+  		h3 {
+  			font-family: 'Play', sans-serif;
+  		}
+  		</style>  
 	</head>
-	<body>
-		<h1>My Resume</h3>
-		<img src="img/profile.jpg">
-		<p><a href="index.html">Go Back</a></p>
-		<h1>Contact Information</h1>
-			<h3>NAME: Batne, Cristin Joye Cayda</h3>
-			<h3>ADDRESS: 2047 Purok 2 Kias, Baguio City</h3>
-			<h3>EMAIL: batne.cristin@gmail.com</h3>
-			<h3>PHONE NUMBER: +639307022090</h3>
-		<h1>Educational Background</h1>
-		<ul>		
-			<li><h3>Saint Louis Univesity, Bonifacio Street, Baguio City, Benguet</h3></li>
-				<h4>Bachelor of Science in Architecture</h4>
-				<p>August 2014 - May 2016 (Undergraduate)</p>
-				<h4>Bachelor of Science in Civil Engineering</h4>
-				<p>June 2013 - March 2014 (Undergraduate)</p>
-			<li><h3>Saint Louis High School of Balatoc Incorporated, Virac, Itogon, Benguet</h3></li>
-				<p>June 2009 - March 2013</p>
-				<li><h3>Fort Del Pilar Elementary School, Philippine Military Academy, Kias, Baguio City, Benguet</h3></li>
-				<p>June 2003 - March 2009</p>
-		</ul>
-		<h1>Skills</h1>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>                        
+		      </button>
+		      <a class="navbar-brand" href="#myresume">My Resume</a>
+		    </div>
+		    <div>
+		      <div class="collapse navbar-collapse" id="myNavbar">
+		        <ul class="nav navbar-nav">
+		          <li><a href="#section1">Contact Information</a></li>
+		          <li><a href="#section2">Educational Background</a></li>
+		          <li><a href="#section3">Skills</a></li>
+		          <li><a href="#section4">Accomplishments</a></li>
+		          <li><a href="#section5">References</a></li>
+		          <li><a href="#section6">Other</a></li>
+	          </li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		</nav>    
+		<div id="myresume" class="container-fluid">
+			<img src="img/profile.jpg" class="img-circle" alt="Resume Image" >
+			<h1>Batne, Cristin Joye C.</h1>
+		</div>
+		<div id="section1" class="container-fluid">
+  			<h1>Contact Information</h1>
+			<h4>NAME: Batne, Cristin Joye Cayda</h4>
+			<h4>ADDRESS: 2047 Purok 2 Kias, Baguio City</h4>
+			<h4>EMAIL: batne.cristin@gmail.com</h4>
+			<h4>PHONE NUMBER: +639307022090</h4>
+		</div>
+		<div id="section2" class="container-fluid">
+  			<h1>Educational Background</h1>
+		<div class="container">                                                                                      
+			<div class="table-responsive">          
+  				<table class="table">
+    				<thead>
+      					<tr>
+        					<th>School</th>
+        					<th>Accomplishment</th>
+        					<th>Years Active</th>
+        					<th>Location</th>
+        					<th>Zip Code</th>
+      					</tr>
+    				</thead>
+    				<tbody>
+      					<tr>
+        					<td>Fort Del Pilar Elementary School</td>
+        					<td>Elementary Graduate</td>
+        					<td>June 2003 - March 2009</td>
+        					<td>Philippine Military Academy, Kias, Baguio City, Benguet.</td>
+        					<td>2600</td>
+      					</tr>
+      					<tr>
+        					<td>Saint Louis High School Of Balatoc Inc.</td>
+        					<td>High School Graduate</td>
+        					<td>June 2009 - March 2013</td>
+        					<td>Philippine Military Academy, Kias, Baguio City, Benguet.</td>
+        					<td>2600</td>
+        				</tr>
+        					<tr>
+        					<td>Cordillera School of Digital Arts</td>
+        					<td>Certificate of Participation - Summer Traditional Arts Program</td>
+        					<td>March 2013</td>
+        					<td>Session Road, Baguio City.</td>
+        					<td>2600</td>
+      					</tr>
+      					<tr>
+        					<td>Saint Louis Uiversity</td>
+        					<td>Undergraduate - Bachelor of Science in Civil Engineering</td>
+        					<td>June 2013 - March 2014</td>
+        					<td>Bonifacio St., Baguio City, Benguet</td>
+        					<td>2600</td>
+      					</tr>
+      					<tr>
+        					<td>University Of Baguio</td>
+        					<td>Undergraduate - Bachelor of Science in Civil Engineering</td>
+        					<td>March 2014 - April 2014</td>
+        					<td>Assumption Rd., Baguio City, Benguet</td>
+        					<td>2600</td>
+      					</tr>
+      					<tr>
+        					<td>Saint Louis Uiversity</td>
+        					<td>Undergraduate - Bachelor of Science in Architecture</td>
+        					<td>August 2014 - May 2016</td>
+        					<td>Bonifacio St., Baguio City, Benguet</td>
+        					<td>2600</td>
+      					</tr>
+    				</tbody>
+  				</table>
+  			</div>
+		</div>
+		</div>
+		<div id="section3" class="container-fluid">
+  			<h1>Skills</h1>
 		<ul>
 			<li>Ability to perform well under pressure and adapt to changing circumstances.</li>
 			<li>Flexible for schedule changes and willing to work with others.</li>
@@ -35,7 +144,9 @@
 			<li>Knowledge in using Adobe Photoshop and Premiere.</li>
 			<li>Basic knowledge in Object Oriented Programming</li>
 		</ul>
-		<h1>Accomplishments/ Achievements</h1>
+		</div>
+		<div id="section4" class="container-fluid">
+			<h1>Accomplishments</h1>
 		<ul>
 			<li>High School Senior Journalist for School publication.</li>
 			<li>Awarded 10th Honorable Mention during our High School Commencement Exercises.</li>
@@ -46,22 +157,37 @@
 			<li>Overall Champion in the 2015 Music Festival Chroral Competition held in Saint Louis University</li>
 			<li>Member of the UC Chorale in the University of the Cordilleras for 1 year.</li>
 		</ul>
-		<h1>Other Information</h1>
+		</div>
+		<div id="section5" class="container-fluid">
+			<h1>Character References</h1>
 		<ul>
-			<li>Currently taking Bachelor of Information Technology in the University of the Cordilleras.</li>
-		</ul>
-		<h1>Character  References</h1>
-		<ul>
-			<li>Engineer Kistin Sito</li>
+			<li><h3>Engineer Kistin Sito</h3></li>
 				<p>Electronics Engineer</p>
 				<p>ECE Faculty Instructor</p>
 				<p>Saint Louis University</p>
 				<p>Contact Number: +639056200520</p>
-			<li>Kate L. Taynan</li>
+			<li><h3>Kate L. Taynan</h3></li>
 				<p>Animator</p>
 				<p>Layout Artist</p>
 				<p>D'Lens Studios</p>
 				<p>Contact Number: +639506839227</p>
+		</ul>			
+		</div>
+		<div id="section6" class="container-fluid">
+			<h1>Other Information</h1>
+		<ul>
+			<li>Currently taking Bachelor of Information Technology in the University of the Cordilleras.</li>
+			<li>Member of the IT Society for they year 2017</li>
+			<li>Writes fanfiction.</li>
 		</ul>
+		<div class="row">
+			<div class="col-sm-12">
+			<a href="index.html"><button type="button" class="btn btn-default">Back To Portfolio</button></a>
+			</div> 
+		</div>		
+		</div>
+		<div id="footer" class="container-fluid">
+			<p>Batne.Copyright 2017</p>
+		</div>	
 		</body>
 </html>
